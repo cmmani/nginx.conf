@@ -1,9 +1,9 @@
 
-<?xml version='1.0' encoding='utf-8'?>
-
 <tomcat-users>
-<role rolename="manager-gui"/>
-<user name="zippyops" password="zippyops" roles="admin,manager,admin-gui,admin-script,manager-gui,manager-script,manager-jmx,manager-status" />
-
+    <role rolename="tomcat"/>
+    <role rolename="manager-gui"/>
+    <user username="zippyops" password="zippyops" roles="manager-gui"/>
+    <user username="both" password="tomcat" roles="tomcat,role1"/>
+    <user username="role1" password="tomcat" roles="role1"/>
 </tomcat-users>
                 
